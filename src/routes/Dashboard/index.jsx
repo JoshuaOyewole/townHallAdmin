@@ -70,8 +70,7 @@ function index() {
 
        <div className={Style.stats__charts}>
         <div className="flex">
-          <ChartCard />
-          <ChartCard />
+     
         </div>
        </div> 
       </main>

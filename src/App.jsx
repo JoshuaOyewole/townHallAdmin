@@ -9,9 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route element={<ProtectedRoute />}>
           <Route path="/" element={<Dashboard />} />
-        </Route>
         <Route path="*" element={<Error />} /> *
       </Routes>
     </>
