@@ -1,0 +1,28 @@
+.card{
+   @apply bg-[#D9D9D9] rounded-sm px-[2rem] py-[0.6rem] font-medium text-sm;
+}
+
+.statCard{
+    @apply  flex-col basis-[22%] flex justify-between bg-[#FFFFFF] px-5 rounded py-4;
+    &__details{
+        @apply flex pb-8 gap-x-2 items-center pt-2;
+
+        &Fraction{
+            @apply font-semibold text-xl;
+        }
+        &Coverage{
+            @apply text-[#2FB344] font-semibold text-sm;
+        }
+    }
+
+}
+.statCard__top{
+  @apply flex justify-between items-center text-[#667382] font-semibold;
+
+  &_left{
+    @apply uppercase text-xs;
+  }
+  &_right{
+    @apply flex justify-center items-center capitalize text-xs;
+  }
+}

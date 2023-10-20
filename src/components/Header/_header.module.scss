@@ -1,0 +1,64 @@
+.header {
+ @apply bg-white;
+ 
+  &__logo {
+    @apply w-10 h-10;
+  }
+  &__top {
+    @apply flex justify-between px-28 py-2;
+
+
+    &_logo{
+      @apply flex justify-center items-center;
+    }
+    &_user {
+      @apply flex;
+
+      &_pixs {
+        @apply w-10 h-10 mr-2 rounded-[50%] border-[1px] border-[#D9D9D9];
+      }
+    }
+
+    &_username {
+      @apply m-0 p-0 text-black;
+
+      &>h3{
+        @apply mb-[-5px] font-medium;
+      }
+      &>h6{
+        @apply text-sm;
+      }
+    }
+
+    &_userInfo{
+      @apply flex justify-between items-center basis-[20%];
+    }
+  }
+
+  &_bottom {
+    @apply px-28 py-2 flex flex-row justify-between;
+    &__navmenu{
+        @apply flex basis-[50%] justify-between;    
+    }
+  }
+
+  &__navmenu_list{
+    @apply flex justify-center items-center;
+
+    &> img{
+      @apply w-4 h-4 mr-1;
+    }
+  }
+
+  &__search_field{
+    @apply border-[#D9D9D9] border-solid border-[1px] px-6 py-[6px] rounded-md;
+
+    &:focus{
+      @apply m-0 outline-none;
+    }
+  }
+}
+
+.icons{
+  @apply w-7 h-7 text-black;
+}

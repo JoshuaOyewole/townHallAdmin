@@ -1,0 +1,22 @@
+.dashboard {
+
+  &__top {
+    @apply flex justify-between items-center px-28 py-6;
+
+    &_left {
+      & > h6 {
+        @apply uppercase text-xs;
+      }
+      & > h3 {
+        @apply text-xl font-semibold;
+      }
+    }
+  }
+}
+
+.stats{
+    @apply flex items-center gap-x-8 gap-y-5 flex-wrap px-28 py-6;
+}
+.cards_container{
+    @apply flex px-28 py-6 justify-between items-center;
+}
