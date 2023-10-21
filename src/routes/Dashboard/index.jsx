@@ -4,6 +4,13 @@ import Style from "./_dashboard.module.scss";
 import Card from "../../components/Cards/Card";
 import CardMini from "../../components/Cards/CardMini";
 import StatCard from "../../components/Cards/StatCard";
+import ChartCard from "../../components/Cards/ChartCard";
+import ListCard from "../../components/Cards/ListCard";
+import {
+  professionalBreakdownData,
+  educationBreakdownData,
+} from "../../dummyData/professionalBreakdownData";
+
 function index() {
   return (
     <div className={Style.dashboard}>
@@ -23,44 +30,43 @@ function index() {
         </div>
         <div className={Style.cards_container}>
           <Card text="Organizations" />
-          <CardMini text="--Level 2--"/>
-          <CardMini text="--Level 2--"/>
-          <CardMini text="--Level 3--"/>
-          <Card text="--Level 4--"/>
+          <CardMini text="--Level 2--" />
+          <CardMini text="--Level 2--" />
+          <CardMini text="--Level 3--" />
+          <Card text="--Level 4--" />
         </div>
 
-
         <div className={Style.stats}>
-          <StatCard 
+          <StatCard
             heading="Total Member"
             stat_type="Last 7 days"
             fractions="1"
           />
-          <StatCard 
+          <StatCard
             heading="Countries"
             stat_type="Last 7 days"
             fractions="1/241"
             coverage="0.41% coverage"
           />
-          <StatCard 
+          <StatCard
             heading="state"
             stat_type="Last 7 days"
             fractions="1/246"
             coverage="0.41% coverage"
           />
-          <StatCard 
+          <StatCard
             heading="lga"
             stat_type="Last 7 days"
             fractions="1/5,392"
             coverage="0.02% coverage"
           />
-          <StatCard 
+          <StatCard
             heading="Wards"
             stat_type="Last 7 days"
             fractions="1/186,131"
             coverage="0% coverage"
           />
-          <StatCard 
+          <StatCard
             heading="Polling Unit"
             stat_type="Last 7 days"
             fractions="1/186,131"
@@ -68,11 +74,29 @@ function index() {
           />
         </div>
 
-       <div className={Style.stats__charts}>
-        <div className="flex">
-     
+        <div className={Style.stats__charts}>
+          <div className="flex justify-between">
+            <ChartCard stat_type="Last 7 days" />
+            <ChartCard heading="Engagement" />
+          </div>
+          <div className="mt-8">
+            <ChartCard heading="Level Breakdown" />
+          </div>
+          <div className="flex justify-between mt-8">
+            <ListCard data={professionalBreakdownData} />
+            <ListCard data={educationBreakdownData} />
+          </div>
+          <div className="flex justify-between mt-8">
+            <ChartCard 
+              heading="Gender Breakdown" 
+              map="Gender Breakdown Map" 
+            />
+            <ChartCard 
+              heading="Age Distribution" 
+              map="Age Distribution Map" 
+            />
+          </div>
         </div>
-       </div> 
       </main>
     </div>
   );

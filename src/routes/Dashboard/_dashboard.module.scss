@@ -15,7 +15,11 @@
 }
 
 .stats{
-    @apply flex items-center gap-x-8 gap-y-5 flex-wrap px-28 py-6;
+    @apply grid grid-cols-4 items-center gap-x-8 gap-y-5 flex-wrap px-28 py-6;
+
+    &__charts{
+      @apply px-28 py-6;
+    }
 }
 .cards_container{
     @apply flex px-28 py-6 justify-between items-center;
