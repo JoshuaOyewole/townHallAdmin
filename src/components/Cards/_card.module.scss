@@ -4,6 +4,17 @@
 
 .statCard{
     @apply  flex-col basis-[22%] flex justify-between bg-[#FFFFFF] px-5 rounded py-4;
+
+    &__top{
+      @apply flex justify-between items-center text-[#667382] font-semibold;
+    
+      &_left{
+        @apply uppercase text-xs;
+      }
+      &_right{
+        @apply flex justify-center items-center capitalize text-xs;
+      }
+    }
     &__details{
         @apply flex pb-8 gap-x-2 items-center pt-2;
 
@@ -14,15 +25,7 @@
             @apply text-[#2FB344] font-semibold text-sm;
         }
     }
-
-}
-.statCard__top{
-  @apply flex justify-between items-center text-[#667382] font-semibold;
-
-  &_left{
-    @apply uppercase text-xs;
-  }
-  &_right{
-    @apply flex justify-center items-center capitalize text-xs;
-  }
+    &__chart{
+      @apply justify-between bg-[#FFFFFF] px-8 rounded-sm pt-6 pb-8 basis-[49%];
+    }
 }
