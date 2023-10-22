@@ -13,6 +13,7 @@ import {
 import PieChart from "../../components/PieChart/PieChart";
 import { Sparklines, SparklinesLine } from "react-sparklines";
 import ReactApexChart from "react-apexcharts";
+import { PrimaryButton } from "../../components/Button/Button";
 
 function index() {
   const chartData = {
@@ -71,9 +72,7 @@ function index() {
             <h3>Dashboard</h3>
           </div>
           <div className={Style.dashboard__top_right}>
-            <button className="bg-[#B0BDEB] px-9 py-[7px] text-black font-medium rounded-md">
-              Filter
-            </button>
+            <PrimaryButton title="Filter" />
           </div>
         </div>
         <div className={Style.cards_container}>
