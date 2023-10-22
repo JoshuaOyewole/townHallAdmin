@@ -3,7 +3,7 @@
 }
 
 .statCard{
-    @apply  flex-col basis-[22%] flex justify-between bg-[#FFFFFF] px-5 rounded py-4;
+    @apply  flex-col basis-[22%] flex bg-[#FFFFFF] px-5 rounded pt-4 pb-2;
 
     &__top{
       @apply flex justify-between items-center text-[#667382] font-semibold;
