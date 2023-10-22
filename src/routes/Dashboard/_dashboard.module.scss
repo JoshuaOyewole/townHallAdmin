@@ -1,7 +1,7 @@
 .dashboard {
 
   &__top {
-    @apply flex justify-between items-center px-28 py-6;
+    @apply flex justify-between items-center px-4 lg:px-28 py-6;
 
     &_left {
       & > h6 {
@@ -15,12 +15,12 @@
 }
 
 .stats{
-    @apply grid grid-cols-4  gap-x-8 gap-y-5 flex-wrap px-28 py-6;
+    @apply grid grid-cols-1 lg:grid-cols-4  gap-x-8 gap-y-5 flex-wrap px-4 lg:px-28 py-6;
 
     &__charts{
-      @apply px-28 py-6;
+      @apply px-4 lg:px-28 py-6;
     }
 }
 .cards_container{
-    @apply flex px-28 py-6 justify-between items-center;
+    @apply flex-wrap gap-y-2 flex px-4 lg:px-28 py-6 justify-between items-center;
 }

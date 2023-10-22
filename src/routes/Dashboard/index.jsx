@@ -147,7 +147,7 @@ function index() {
         </div>
 
         <div className={Style.stats__charts}>
-          <div className="flex justify-between">
+          <div className="flex justify-between flex-col lg:flex-row gap-y-8">
             <ChartCard
               stat_type="Last 7 days"
               heading="New Members"
@@ -185,11 +185,11 @@ function index() {
               }
             />
           </div>
-          <div className="flex justify-between mt-8">
+          <div className="flex justify-between mt-8 flex-col lg:flex-row lg:gap-y-0 gap-y-8">
             <ListCard data={professionalBreakdownData} />
             <ListCard data={educationBreakdownData} />
           </div>
-          <div className="flex justify-between mt-8">
+          <div className="flex justify-between mt-8 lg:flex-row flex-col gap-y-8 lg:gap-y-0">
             <ChartCard
               heading="Gender Breakdown"
               map={
