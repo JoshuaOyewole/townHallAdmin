@@ -43,7 +43,7 @@
   }
 
   &__navmenu_list{
-    @apply flex justify-center items-center;
+    @apply flex text-sm justify-center items-center;
 
     &> img{
       @apply w-4 h-4 mr-1;
